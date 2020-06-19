@@ -1,0 +1,25 @@
+{
+  "name": "mediacollege/mvc-starter",
+  "description": "MVC Starter project - BAP",
+  "type": "project",
+  "require": {
+    "pecee/simple-router": "4.2.0.6",
+    "league/plates": "3.3.*",
+    "ext-pdo": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Andrade Leroy, Hidde Braun", 
+      "email": "30168@Ma-Web.NL"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Website\\Controllers\\": "private/controllers/"
+    }
+  }
+}

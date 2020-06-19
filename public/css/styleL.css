@@ -1,0 +1,261 @@
+body {
+  background-color: #F1F1F1;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 auto; }
+
+header {
+  width: 95vw; }
+
+ul {
+  clear: both;
+  width: auto;
+  height: 80vh; }
+
+li {
+  list-style-type: none;
+  line-height: 2em; }
+
+a {
+  display: inline;
+  text-decoration: none;
+  margin-right: 150px; }
+
+nav {
+  padding-top: 15px;
+  padding-left: 10px;
+  background-color: #F1F1F1;
+  position: fixed;
+  top: 0;
+  height: auto;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid grey;
+  margin-bottom: 5px; }
+
+input[type="button"]#menuClosed1 {
+  text-align: center;
+  font-size: 1em;
+  border-radius: 24%;
+  background-color: #FFFFFF;
+  float: left;
+  border-bottom: 1px solid grey; }
+
+#menuClosed2 {
+  margin-left: 25vw;
+  margin-top: -1px; }
+
+#menuOpen {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  padding-top: 25px;
+  width: 80vw;
+  background-color: #FFFFFF;
+  height: 100vh;
+  z-index: 10; }
+
+.pl-40 {
+  margin-left: 40px; }
+
+.pb-100 {
+  padding-top: 100px; }
+
+#toggleLabel {
+  float: left; }
+
+input[type="button"]#menuButtonOpen {
+  padding: 0;
+  border-radius: 24%;
+  width: 32px;
+  height: 25px;
+  font-size: 18px;
+  float: right;
+  margin-right: 40px; }
+
+figure, img {
+  float: left; }
+
+.productenSectie {
+  margin: 1em;
+  z-index: 2; }
+
+input[type="button"]#menuButtonOpen {
+  color: green; }
+
+#checkboxDefault:checked ~ #menuExpand {
+  width: 80vw;
+  height: 100%;
+  background-color: blue;
+  border: 10px solid blue; }
+
+body {
+  font-family: sans-serif, Arial; }
+
+.boekSelectie__cover {
+  max-width: 100px; }
+
+.boekSelectie__rij--accent {
+  background-color: #def; }
+
+.boekSelectie__data-cel {
+  padding: 1em;
+  vertical-align: top; }
+
+.boekSelectie__data-cel:nth-child(3) {
+  padding: 0; }
+
+.boekSelectie {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-gap: 1em;
+  margin-bottom: 1em; }
+
+.boekSelectie:nth-child(even) {
+  background-color: #eee; }
+
+.boekSelectie__main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 0.5em 0; }
+
+.boekSelectie__titel {
+  margin: 0; }
+
+.boekSelectie__overig {
+  margin: 0;
+  font-size: 0.8em;
+  color: #555; }
+
+.boekSelectie__prijs {
+  font-size: 2em;
+  margin-bottom: 0.5em; }
+
+.boekSelectie__knop {
+  display: block;
+  margin: 1.5em auto;
+  background-color: red;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5em 1em 1em;
+  border-radius: 1em; }
+
+.boekSelectie__knop:hover {
+  background-color: #900; }
+
+.winkelwagen {
+  margin-top: 1em;
+  width: 2em;
+  height: 2em;
+  background-image: url(".././afb/winkelwagen.svg");
+  background-size: contain;
+  float: right;
+  margin-right: 3em;
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.winkelwagen__aantal:not(:empty) {
+  background-color: #f00;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: -0.5em;
+  right: -0.9em;
+  line-height: 0.5em;
+  padding: 0.2em;
+  border-radius: 50%; }
+
+.besteldItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-gap: 2em;
+  margin-bottom: 0.5em; }
+
+.besteldItem__cover {
+  max-width: 50px;
+  padding-bottom: 0.3em; }
+
+.besteldItem__titel {
+  font-weight: normal;
+  font-size: 1em; }
+
+.besteldItem__verwijderen {
+  border-radius: 0.3em;
+  width: 2em;
+  height: 2em;
+  background-image: url(".././afb/bin.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 1s ease-out; }
+
+.besteldItem__verwijderen:hover {
+  background-color: red;
+  width: 1.5em; }
+
+@media screen and (min-width: 40em) {
+  .besteldItem {
+    max-width: 40em;
+    margin: 0 auto; } }
+@media screen and (min-width: 60em) {
+  #uitvoer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em; }
+
+  .boekSelectie:nth-child(even) {
+    background-color: inherit; }
+
+  .boekSelectie:nth-child(4n+2), .boekSelectie:nth-child(4n+3) {
+    background-color: #eee; } }
+@media screen and (min-width: 60em) {
+  #uitvoer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em; }
+
+  .boekSelectie:nth-child(even) {
+    background-color: inherit; }
+
+  .boekSelectie:nth-child(4n+2), .boekSelectie:nth-child(4n+3) {
+    background-color: #eee; } }
+@media screen and (max-width: 30em) {
+  #uitvoer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em; }
+
+  .boekSelectie:nth-child(even) {
+    background-color: inherit; }
+
+  .boekSelectie:nth-child(4n+2), .boekSelectie:nth-child(4n+3) {
+    background-color: #eee; } }
+.pagination {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #ededed; }
+
+.pagination__number {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: #fff;
+  background: #333;
+  text-decoration: none;
+  display: inline-flex;
+  align-content: center;
+  line-height: 30px;
+  justify-content: center;
+  margin: 0 10px 10px 0; }
+
+.pagination__number--active {
+  color: #333;
+  background: #ededed; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+/*# sourceMappingURL=styleL.css.map */
