@@ -1,6 +1,9 @@
 #live versie:
 http://30168.hosts2.ma-cloud.nl/bewijzenmap/periode4.4/proj/mvc/public/winkelpagina
 
+#Download volledige project document
+https://github.com/LeroyAndrade/Project-P4/blob/master/Documentatie/Documentatie_Leroy-Andrade_Leroy-v7.docx?raw=true
+
 ## MVC starter project
 
 Gebruik dit starter project om snel aan de slag te gaan met het leren van het werken in de MVC structuur (model view controller)
